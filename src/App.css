@@ -1,0 +1,237 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.headerModule {
+  background: #d0eaeb;
+  border-bottom: 2px solid #fff;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 12%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  height: 68px;
+}
+.headerModule > .ui-menu {
+  gap: 25px;
+  border: none;
+}
+.headerModule > .ui-menu > li {
+  border: none;
+  box-shadow: none;
+}
+.headerModule .ui-menu > li > a {
+  color: #458285;
+  font-size: 16px;
+  padding: 12px 10px;
+  font-weight: 600;
+  position: relative;
+  text-align: left;
+}
+.headerModule .ui-menu > li > a::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  background: rgb(69, 130, 133);
+  background: linear-gradient(
+    90deg,
+    rgba(69, 130, 133, 1) 0%,
+    rgba(208, 234, 235, 1) 100%
+  );
+  transition: all 0.5s ease;
+}
+.headerModule .ui-menu > li > a:hover::after {
+  width: 100%;
+}
+.headerModule .ui-menu > li .ui-menu__itemindicator {
+  color: #458285;
+}
+.headerModule .ui-menu > li > a:hover {
+  color: #15144a;
+}
+.headerModule .ui-menu > li > ul > a {
+  color: #15144a;
+  font-size: 16px;
+  padding: 12px 25px;
+  text-align: left;
+  justify-content: space-between;
+  display: flex;
+}
+.headerModule ul > li > ul {
+  padding: 0;
+  border-top: 4px solid #458285;
+  min-width: 120px;
+}
+.headerModule ul > li > ul > li:hover {
+  background: transparent !important;
+}
+.headerModule > .button {
+  background: #458285;
+  border-radius: 50px;
+  height: 40px;
+  border: 2px solid #fff;
+  min-width: 130px;
+  color: #fff;
+  flex-direction: row-reverse;
+  gap: 15px;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.headerModule > .button:hover {
+  background: #fff;
+  border-color: #458285;
+  color: #458285;
+}
+.headerModule > .button > .ui-box {
+  margin: 0 !important;
+}
+.ui-popup__content {
+  box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 22%);
+  margin-top: 10px !important;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.ui-popup__content__content {
+  padding: 0px !important;
+  border-radius: 15px !important;
+  overflow: hidden !important;
+}
+.settingModelTitle {
+  font-size: 24px;
+  line-height: 32px;
+  color: #458285;
+  margin: 0;
+}
+.settingModelHead {
+  border-bottom: 1px solid #d0eaeb;
+  padding: 20px;
+}
+.settingModelHead p {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 4px 0 0;
+  color: #8aa4a5;
+  font-weight: 500;
+}
+.settingModelBody {
+  padding: 20px;
+}
+.settingModelBody .ui-form .ui-form__button {
+  text-align: right;
+}
+.addFormTitle {
+  font-size: 16px;
+  line-height: 24px;
+  color: #458285;
+  margin: 0 0 15px;
+}
+.settingModelBody .ui-form input {
+  border: 1px solid #458285;
+  border-radius: 6px;
+  height: 38px;
+  padding: 8px 15px;
+  background: #fff;
+}
+.settingModelBody .ui-form .ui-box {
+  width: 100%;
+}
+.settingModelBody .ui-form .ui-form__button button {
+  border: 2px solid #458285;
+  padding: 8px 25px;
+  min-height: 38px;
+  border-radius: 8px;
+  color: #458285;
+  font-weight: 600;
+  min-width: 125px;
+}
+.settingModelBody .ui-form ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.settingModelBody .ui-form li h6 {
+  margin: 0 0 5px;
+  font-size: 15px;
+  color: #456162;
+  text-transform: capitalize;
+}
+.settingModelBody .ui-form li > div {
+  margin: 10px 0 20px;
+}
+.settingModelBody .ui-form li > .addedMenu-items .addedMenu-link {
+  font-size: 14px;
+  color: #666;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 3px;
+  cursor: pointer;
+  font-weight: 600;
+  border-left: 3px solid transparent;
+  padding-left: 10px;
+  line-height: 24px;
+}
+.settingModelBody .ui-form li > .addedMenu-items .addedMenu-link svg {
+  color: #458285;
+}
+.settingModelBody .ui-form li > .addedMenu-items .addedMenu-link.active {
+  color: #458285;
+  border-color: #458285;
+}
+.addMenuForm-field {
+  background: #f2ffff;
+  border: 1px solid #d0eaeb;
+  padding: 15px;
+  border-radius: 10px;
+}
+.addedMenu-link {
+  transition: 0.2s;
+  list-style-type: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.addedMenu-link.active,
+.addedMenu-link:hover {
+  color: #456162;
+}
